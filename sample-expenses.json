@@ -1,0 +1,32 @@
+[
+	{
+		"name": "Rent",
+		"amount": 505000,
+		"category": 3,
+		"member": [
+			{ "name": "john", "amount": 200000 },
+			{ "name": "jane", "amount": 150000 },
+			{ "name": "jacob", "amount": 155000 }
+		]
+	},
+	{
+		"name": "Utilities",
+		"amount": 40000,
+		"estimate": -2,
+		"category": 9,
+		"member": [
+			"john",
+			"jane",
+			"jacob"
+		]
+	},
+	{
+		"name": "Parking",
+		"amount": 10000,
+		"category": 18,
+		"member": [
+			"john",
+			"jane"
+		]
+	}
+]
