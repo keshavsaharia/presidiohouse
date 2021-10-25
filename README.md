@@ -10,7 +10,7 @@ You will need a `.env` file and to create an `expenses.json` file. You can use t
 ```
 $ node create-expenses.js
 
-Managing expenses for Bee Unit (8009865)
+Managing expenses for Example House (1234567)
 Create expenses for November? (y/N) y
  - Creating expense for Rent
  - Creating expense for Utilities
