@@ -7,10 +7,29 @@ This is a set of scripts for managing shared expenses in a Presidio house.
 You will need a `.env` file and to create an `expenses.json` file. You can use the
 [example](./sample-expenses.json) as a starter.
 
+## Creating environment file
+
+You will need to get the `CLIENT KEY` and `CLIENT SECRET` by [registering an app](https://secure.splitwise.com/apps). You can
+retrieve the value for `GROUP ID` and a list of members (select the member ID of the house for `HOUSE ID`) by first filling the
+splitwise key and secret, then running the `get-group.js` script.
+
+```
+SPLITWISE_GROUP_ID="{ GROUP ID }"
+SPLITWISE_HOUSE_ID="{ HOUSE ID }"
+SPLITWISE_KEY="{ CLIENT KEY }"
+SPLITWISE_SECRET="{ CLIENT SECRET }"
+```
+
+You can also get the group ID from the URL on splitwise.com - it is the number part of `https://secure.splitwise.com/#/groups/123456` (i.e. `123456`). Similarly, click on the house member URL to get `https://secure.splitwise.com/#/friends/1234567` (i.e. `1234567` is `HOUSE ID`). 
+
+## Run the script to create expenses
+
+Create all Splitwise expenses for the upcoming month with the `create-expenses.js` script.
+
 ```
 $ node create-expenses.js
 
-Managing expenses for Bee Unit (8009865)
+Managing expenses for Example House (1234567)
 Create expenses for November? (y/N) y
  - Creating expense for Rent
  - Creating expense for Utilities
