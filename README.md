@@ -3,6 +3,7 @@
 This is a set of scripts for managing shared expenses in a Presidio house.
 
 - [Create Expenses](./create-expenses.js) - create shared expense objects
+- [Get Splitwise IDs](./get-group.js) - get group IDs and member IDs for initial configuration
 
 You will need a `.env` file and to create an `expenses.json` file. You can use the
 [example](./sample-expenses.json) as a starter.
@@ -20,7 +21,7 @@ SPLITWISE_KEY="{ CLIENT KEY }"
 SPLITWISE_SECRET="{ CLIENT SECRET }"
 ```
 
-You can also get the group ID from the URL on splitwise.com - it is the number part of `https://secure.splitwise.com/#/groups/123456` (i.e. `123456`). Similarly, click on the house member URL to get `https://secure.splitwise.com/#/friends/1234567` (i.e. `1234567` is `HOUSE ID`). 
+You can also get the group ID from the URL on splitwise.com - it is the number part of `https://secure.splitwise.com/#/groups/123456` (i.e. `123456`). Similarly, click on the house member URL to get `https://secure.splitwise.com/#/friends/1234567` (i.e. `1234567` is `HOUSE ID`).
 
 ## Run the script to create expenses
 
